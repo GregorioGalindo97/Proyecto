@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./style_pedido.css">
+		<title>Milks</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+        <header>
+			<nav class="menu">
+                <div class="logo"><a href="./Iniciar pedido.html"><img id="logotipo" src="./Imagenes/logo.png" alt="imagen del logo de la empresa"></a>
+                </div>
+                <form class="search" action="#" method="get">
+                  <input type="text" placeholder="Buscador de pasteles">
+                  <input type="submit" value="ENTER">
+                </form>
+                <a href="./Como contactarnos.html">Contactanos</a>
+                <a href="./Iniciar pedido.html">Inicia tu pedido</a>
+                <div class="container-icon">
+                    <div class="container-cart-icon">
+                        <svg xmlns="" fill="none" viewBox="" stroke-width="1.5" stroke="currentColor"class="icon-cart"></svg>
+                        <div class="count-products">
+                            <span id="contador-productos">0</span>
+                        </div>
+                    </div>
+    
+                    <div class="container-cart-products hidden-cart">
+                        <div class="row-product hidden">
+                            <div class="cart-product">
+                                <div class="info-cart-product">
+                                    <span class="cantidad-producto-carrito"></span>
+                                    <p class="titulo-producto-carrito"></p>
+                                    <span class="precio-producto-carrito"></span>
+                                </div>
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="cart-total hidden">
+                            <h3>Total:</h3>
+                            <span class="total-pagar">$0</span>
+                        </div>
+                        <p class="cart-empty"></p>
+                    </div>
+                </div>
+              </nav>
+			
+		</header>
+
+        <h2>Consulta la tabla de precios o elige un pastel con nuestros diseños mas famosos</h2>
+
+        <div class="tabla">
+            
+            <table>
+            <tr>
+                <td>Tamaño de pastel</td>
+                <td>50 Personas </td>
+                <td>100 Personas </td>
+                <td>150 Personas </td>
+                <td>500 Personas </td>                    
+                <td>1000 Personas </td>
+            </tr>
+            <tr>
+                <td>Costo de pastel</td>
+                <td>$150</td>
+                <td>$300</td>
+                <td>$450</td>
+                <td>$1500</td>
+                <td>$3000</td>
+            </tr>
+        </table>
+        </div>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img src="./Imagenes/pastel 1.jpg" alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>Pastel talavera</h2>
+					<p class="price">$350</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="./Imagenes/Pastel 2.jpg" alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2> Conmemorativo contra el cancer de mama</h2>
+					<p class="price">$500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="./Imagenes/Pastel 3.jpg" alt="producto"/>
+				</figure>
+				<div class="info-product">
+					<h2>One Piece</h2>
+					<p class="price">$450</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+            <h3>LLena tus datos de envio</h3>
+            <form class="encuesta" onsubmit="submitForm(event)">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+          
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="phone" required><br>
+          
+                <label for="direccion">Direccion de entrega:</label>
+                <textarea id="direccion" name="" rows="" required></textarea><br>
+          
+                <button type="submit">Confirmar orden</button>
+              </form>
+              
+        <script src="./index.js"></script>
+	</body>
+</html>
